@@ -1,0 +1,86 @@
+/* * {
+  outline: 1px solid green;
+} */
+
+html {
+  height: 100%;
+}
+body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: auto;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+/* login */
+.login_block input {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.input_field {
+
+}
+
+.submit {
+  color: white;
+  background-color: #1C1C1C;
+
+}
+
+.pass_alert {
+  color: red;
+}
+
+/* main */
+.excerpt_container {
+  display: flex;
+  width: 85%;
+  margin-top: auto;
+}
+
+.quote_symbol {
+  width: 7%;
+  align-self: flex-start;
+  margin-top: -30px;
+}
+
+.excerpt_block {
+  width: 93%;
+}
+
+.comment_block {
+  position: relative;
+  background-color: #1C1C1C;
+}
+
+.comment_block::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 10px solid #1C1C1C;
+  position: absolute;
+  top: -10px;
+}
+
+#comment {
+  color: white;
+  padding: 10px;
+}
+
+.button_refresh {
+  width: 10%;
+  align-self: flex-end;
+  margin: auto 30px 30px 0;
+}
