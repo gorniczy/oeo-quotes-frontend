@@ -24,7 +24,7 @@ class Login extends React.Component {
     return (
       <div className='login_block'>
         <form onSubmit={this.handleSubmit}>
-          <input className="input_field" type='text' name='password' placeholder="hasło" onChange={this.handleChange} />
+          <input className="input_field" type='password' name='password' placeholder="hasło" onChange={this.handleChange} />
           <input className="submit" type='submit' value='Wejdź' />
           {alert && (<p className="pass_alert">Nieprawidłowe hasło</p>)}
         </form>
