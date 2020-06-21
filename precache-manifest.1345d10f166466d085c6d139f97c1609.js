@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "914ced50ccb60dc96217e094e8f9493b",
+    "revision": "4a448c8c60fc6b85641dd2696b55d232",
     "url": "/oeo-quotes-frontend/index.html"
   },
   {
-    "revision": "dbc8217d5782079e771d",
+    "revision": "6ee6fcd173dc9305cd4c",
     "url": "/oeo-quotes-frontend/static/css/main.6e44b26d.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/oeo-quotes-frontend/static/js/2.9f114043.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dbc8217d5782079e771d",
-    "url": "/oeo-quotes-frontend/static/js/main.04a63c07.chunk.js"
+    "revision": "6ee6fcd173dc9305cd4c",
+    "url": "/oeo-quotes-frontend/static/js/main.5a8826ba.chunk.js"
   },
   {
     "revision": "ec3212b7a9dd6cf51a05",
