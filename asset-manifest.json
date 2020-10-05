@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/oeo-quotes-frontend/static/css/main.6e44b26d.chunk.css",
-    "main.js": "/oeo-quotes-frontend/static/js/main.aa5c7e19.chunk.js",
-    "main.js.map": "/oeo-quotes-frontend/static/js/main.aa5c7e19.chunk.js.map",
+    "main.css": "/oeo-quotes-frontend/static/css/main.180e8c83.chunk.css",
+    "main.js": "/oeo-quotes-frontend/static/js/main.e232b4f5.chunk.js",
+    "main.js.map": "/oeo-quotes-frontend/static/js/main.e232b4f5.chunk.js.map",
     "runtime-main.js": "/oeo-quotes-frontend/static/js/runtime-main.7f421f9a.js",
     "runtime-main.js.map": "/oeo-quotes-frontend/static/js/runtime-main.7f421f9a.js.map",
     "static/js/2.9f114043.chunk.js": "/oeo-quotes-frontend/static/js/2.9f114043.chunk.js",
     "static/js/2.9f114043.chunk.js.map": "/oeo-quotes-frontend/static/js/2.9f114043.chunk.js.map",
     "index.html": "/oeo-quotes-frontend/index.html",
-    "precache-manifest.f99413aabc1f610ecd27021a27bf2ba2.js": "/oeo-quotes-frontend/precache-manifest.f99413aabc1f610ecd27021a27bf2ba2.js",
+    "precache-manifest.39dfd96947dd2b6060a3686f6af5fdb4.js": "/oeo-quotes-frontend/precache-manifest.39dfd96947dd2b6060a3686f6af5fdb4.js",
     "service-worker.js": "/oeo-quotes-frontend/service-worker.js",
-    "static/css/main.6e44b26d.chunk.css.map": "/oeo-quotes-frontend/static/css/main.6e44b26d.chunk.css.map",
+    "static/css/main.180e8c83.chunk.css.map": "/oeo-quotes-frontend/static/css/main.180e8c83.chunk.css.map",
     "static/js/2.9f114043.chunk.js.LICENSE.txt": "/oeo-quotes-frontend/static/js/2.9f114043.chunk.js.LICENSE.txt",
     "static/media/quote.svg": "/oeo-quotes-frontend/static/media/quote.704e0bc9.svg",
     "static/media/refresh.svg": "/oeo-quotes-frontend/static/media/refresh.b0129912.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.7f421f9a.js",
     "static/js/2.9f114043.chunk.js",
-    "static/css/main.6e44b26d.chunk.css",
-    "static/js/main.aa5c7e19.chunk.js"
+    "static/css/main.180e8c83.chunk.css",
+    "static/js/main.e232b4f5.chunk.js"
   ]
 }

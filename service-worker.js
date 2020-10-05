@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/oeo-quotes-frontend/precache-manifest.f99413aabc1f610ecd27021a27bf2ba2.js"
+  "/oeo-quotes-frontend/precache-manifest.39dfd96947dd2b6060a3686f6af5fdb4.js"
 );
 
 self.addEventListener('message', (event) => {
