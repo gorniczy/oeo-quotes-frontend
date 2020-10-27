@@ -10,12 +10,7 @@ class App extends React.Component {
     super(props)
     this.state = {
       loggedIn: false,
-      fragment: "",
-      authorContent: "",
-      nameContent: "",
-      locationContent: "",
-      commentContent: "",
-      tagsContent: "",
+      results: null,
     }
   }
 
@@ -28,17 +23,12 @@ class App extends React.Component {
     }
   }
 
-  fetchData = () => {
-    fetch("https://oeo-quotes-backend.herokuapp.com/data")
+  fetchData = (num) => {
+    fetch(`http://localhost:3001/data-${num}`)
       .then((response) => response.json())
       .then((payLoad) => {
         this.setState({
-          fragment: payLoad.fragment,
-          authorContent: payLoad.author,
-          nameContent: payLoad.name,
-          locationContent: payLoad.location,
-          commentContent: payLoad.comment,
-          passAlert: "",
+          results: payLoad.results,
         })
       })
   }
@@ -57,36 +47,34 @@ class App extends React.Component {
           this.setState({
             loggedIn: true,
           })
+        } else {
+          this.setState({
+            passAlert: "nieprawidłowe hasło",
+          })
         }
-        this.setState({
-          passAlert: "nieprawidłowe hasło",
-        })
       })
       .catch((err) => console.log(err))
   }
 
   render() {
-    const {
-      loggedIn,
-      fragment,
-      authorContent,
-      nameContent,
-      locationContent,
-      commentContent,
-    } = this.state
+    const { loggedIn, results, numOfQuotes } = this.state
 
     return (
       <div className='App'>
         <Header />
-        {loggedIn ? (
+        {loggedIn && results ? (
           <React.Fragment>
-            <Quote
-              fragment={fragment}
-              authorContent={authorContent}
-              nameContent={nameContent}
-              locationContent={locationContent}
-              commentContent={commentContent}
-            />
+            {results.map((element, i) => {
+              return (
+                <Quote
+                  fragment={results[i][5]}
+                  authorContent={results[i][2]}
+                  nameContent={results[i][1]}
+                  locationContent={results[i][4]}
+                  commentContent={results[i][6]}
+                />
+              )
+            })}
             <img
               onClick={() => this.fetchData()}
               className='button_refresh'
