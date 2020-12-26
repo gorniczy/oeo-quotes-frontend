@@ -1,9 +1,9 @@
 import React from "react"
 import "./App.css"
-import refresh from "./img/refresh.svg"
 import Header from "./components/Header"
 import Quote from "./components/Quote"
 import Login from "./components/Login"
+import Navbar from "./components/Navbar"
 
 class App extends React.Component {
   constructor(props) {
@@ -11,6 +11,7 @@ class App extends React.Component {
     this.state = {
       loggedIn: false,
       results: null,
+      numOfQuotes: 1,
     }
   }
 
@@ -19,12 +20,12 @@ class App extends React.Component {
       prevState.loggedIn !== this.state.loggedIn &&
       this.state.loggedIn === true
     ) {
-      this.fetchData()
+      this.fetchData(this.state.numOfQuotes)
     }
   }
 
   fetchData = (num) => {
-    fetch(`http://localhost:3001/data-${num}`)
+    fetch(`https://oeo-quotes-backend.herokuapp.com/quotes-${num}`)
       .then((response) => response.json())
       .then((payLoad) => {
         this.setState({
@@ -56,31 +57,40 @@ class App extends React.Component {
       .catch((err) => console.log(err))
   }
 
+  updateNum = () => {
+    this.setState({
+      numOfQuotes: this.state.numOfQuotes === 1 ? 2 : 1,
+    })
+  }
+
   render() {
     const { loggedIn, results, numOfQuotes } = this.state
 
     return (
       <div className='App'>
         <Header />
+
         {loggedIn && results ? (
           <React.Fragment>
-            {results.map((element, i) => {
-              return (
-                <Quote
-                  fragment={results[i][5]}
-                  authorContent={results[i][2]}
-                  nameContent={results[i][1]}
-                  locationContent={results[i][4]}
-                  commentContent={results[i][6]}
-                />
-              )
-            })}
-            <img
-              onClick={() => this.fetchData()}
-              className='button_refresh'
-              src={refresh}
-              alt=''
-            ></img>
+            <main>
+              {results.map((element, i) => {
+                return (
+                  <Quote
+                    key={i}
+                    fragment={results[i][5]}
+                    authorContent={results[i][2]}
+                    nameContent={results[i][1]}
+                    locationContent={results[i][4]}
+                    commentContent={results[i][6]}
+                  />
+                )
+              })}
+            </main>
+            <Navbar
+              fetchData={this.fetchData}
+              updateNum={this.updateNum}
+              numOfQuotes={numOfQuotes}
+            />
           </React.Fragment>
         ) : (
           <Login login={this.login} alert={this.state.passAlert} />
