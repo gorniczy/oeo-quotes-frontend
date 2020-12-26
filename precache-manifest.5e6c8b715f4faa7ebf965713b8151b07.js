@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "72db7a6bf64e0ff10dffcff7aaee3669",
+    "revision": "00d269bb74fe860a2bbdc74ed3563c48",
     "url": "/oeo-quotes-frontend/index.html"
   },
   {
-    "revision": "31ad2f43f2e52458d48c",
-    "url": "/oeo-quotes-frontend/static/css/main.180e8c83.chunk.css"
+    "revision": "88af32377621934a5e9a",
+    "url": "/oeo-quotes-frontend/static/css/main.cad19ff8.chunk.css"
   },
   {
     "revision": "32593fa9b67dcea38d61",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/oeo-quotes-frontend/static/js/2.9f114043.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "31ad2f43f2e52458d48c",
-    "url": "/oeo-quotes-frontend/static/js/main.e232b4f5.chunk.js"
+    "revision": "88af32377621934a5e9a",
+    "url": "/oeo-quotes-frontend/static/js/main.d6d7c83f.chunk.js"
   },
   {
     "revision": "ec3212b7a9dd6cf51a05",
@@ -28,7 +28,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/oeo-quotes-frontend/static/media/quote.704e0bc9.svg"
   },
   {
-    "revision": "b0129912c1bb7871c31d1654c24352d7",
-    "url": "/oeo-quotes-frontend/static/media/refresh.b0129912.svg"
+    "revision": "d5822e5b483785f68eeb3e593757d27a",
+    "url": "/oeo-quotes-frontend/static/media/refresh.d5822e5b.svg"
   }
 ]);
