@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/oeo-quotes-frontend/static/css/main.cad19ff8.chunk.css",
+    "main.css": "/oeo-quotes-frontend/static/css/main.f5c8e73a.chunk.css",
     "main.js": "/oeo-quotes-frontend/static/js/main.d6d7c83f.chunk.js",
     "main.js.map": "/oeo-quotes-frontend/static/js/main.d6d7c83f.chunk.js.map",
     "runtime-main.js": "/oeo-quotes-frontend/static/js/runtime-main.7f421f9a.js",
@@ -8,9 +8,9 @@
     "static/js/2.9f114043.chunk.js": "/oeo-quotes-frontend/static/js/2.9f114043.chunk.js",
     "static/js/2.9f114043.chunk.js.map": "/oeo-quotes-frontend/static/js/2.9f114043.chunk.js.map",
     "index.html": "/oeo-quotes-frontend/index.html",
-    "precache-manifest.5e6c8b715f4faa7ebf965713b8151b07.js": "/oeo-quotes-frontend/precache-manifest.5e6c8b715f4faa7ebf965713b8151b07.js",
+    "precache-manifest.f1a0145ebb3859b8bd4fc53c365dca79.js": "/oeo-quotes-frontend/precache-manifest.f1a0145ebb3859b8bd4fc53c365dca79.js",
     "service-worker.js": "/oeo-quotes-frontend/service-worker.js",
-    "static/css/main.cad19ff8.chunk.css.map": "/oeo-quotes-frontend/static/css/main.cad19ff8.chunk.css.map",
+    "static/css/main.f5c8e73a.chunk.css.map": "/oeo-quotes-frontend/static/css/main.f5c8e73a.chunk.css.map",
     "static/js/2.9f114043.chunk.js.LICENSE.txt": "/oeo-quotes-frontend/static/js/2.9f114043.chunk.js.LICENSE.txt",
     "static/media/quote.svg": "/oeo-quotes-frontend/static/media/quote.704e0bc9.svg",
     "static/media/refresh.svg": "/oeo-quotes-frontend/static/media/refresh.d5822e5b.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.7f421f9a.js",
     "static/js/2.9f114043.chunk.js",
-    "static/css/main.cad19ff8.chunk.css",
+    "static/css/main.f5c8e73a.chunk.css",
     "static/js/main.d6d7c83f.chunk.js"
   ]
 }
