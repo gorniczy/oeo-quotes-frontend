@@ -63,7 +63,7 @@ main {
 
 .excerpt_block {
   width: 93%;
-  align-self: end;
+  margin-left: auto;
 }
 
 #excerpt,
