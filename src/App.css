@@ -2,85 +2,108 @@
   outline: 1px solid green;
 } */
 
-html {
-  height: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
+
+h1 {
+  font-size: 30px;
 }
-body, #root {
+
+html,
+body,
+#root,
+.App {
   height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: Roboto, Helvetica, sans-serif;
   font-size: 18px;
-  line-height: auto;
 }
 
 .App {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100%;
+  display: grid;
+  grid-template-rows: 80px auto 50px;
+  font-family: Roboto;
+  line-height: normal;
 }
 
-/* login */
+.login_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .login_block input {
   padding: 10px;
   font-size: 18px;
 }
 
-.input_field {
-
-}
-
 .submit {
-  color: white;
-  background-color: #1C1C1C;
-
+  color: #fff;
+  background-color: #1c1c1c;
 }
 
-.pass_alert {
-  color: red;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 
-/* main */
+main {
+  overflow: scroll;
+}
+
 .excerpt_container {
   display: flex;
-  width: 85%;
-  margin-top: auto;
+  flex-direction: column;
+  margin: 50px 20px;
 }
 
 .quote_symbol {
-  width: 7%;
-  align-self: flex-start;
-  margin-top: -30px;
+  width: 25px;
 }
 
 .excerpt_block {
   width: 93%;
+  align-self: end;
+}
+
+#excerpt,
+#details {
+  margin-top: 19px;
 }
 
 .comment_block {
+  background-color: #1c1c1c;
+  color: white;
   position: relative;
-  background-color: #1C1C1C;
+  padding: 10px;
+  margin-top: 29px;
 }
 
 .comment_block::before {
-  content: '';
+  content: "";
   width: 0;
   height: 0;
-  border-top: 10px solid transparent;
-  border-left: 10px solid #1C1C1C;
+  border-top: 13px solid transparent;
+  border-left: 13px solid #1c1c1c;
   position: absolute;
-  top: -10px;
+  top: -12px;
+  left: 0;
 }
 
-#comment {
+nav {
+  display: flex;
+  background-color: #1c1c1c;
   color: white;
-  padding: 10px;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  border: 1px solid #2f2f2f;
 }
 
 .button_refresh {
-  width: 10%;
-  align-self: flex-end;
-  margin: auto 30px 30px 0;
+  height: 40%;
 }
